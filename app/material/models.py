@@ -8,3 +8,6 @@ class Material(models.Model):
     mat_fne = models.CharField(max_length=200, blank=True, null=True)
     mat_dt_aqui = models.DateField(blank=True, null=True)
     mat_obs = models.TextField(blank=True, null=True)
+
+    def __str__(self):
+        return self.mat_desc
