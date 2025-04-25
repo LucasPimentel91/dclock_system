@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'funcionario',
     'servicos',
     'servico_material',
+    'modelo',
 ]
 
 MIDDLEWARE = [

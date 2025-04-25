@@ -3,7 +3,7 @@ from servicos.models import Servico
 #from servico_material.models import ServicoMaterial
 
 class ServicoAdmin(admin.ModelAdmin):
-    list_display = ('ser_desc', 'ser_tipo_servico', 'ser_cli_id', 'ser_usr_id', 'ser_preco_total')
+    list_display = ('ser_titulo', 'ser_tipo_servico', 'ser_cli_id', 'ser_usr_id', 'ser_preco_total', 'ser_obs')
     search_fields = ('ser_cli_id', 'ser_tipo_servico',)
 
 admin.site.register(Servico, ServicoAdmin)
