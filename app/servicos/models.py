@@ -10,5 +10,4 @@ class Servico(models.Model):
     ser_tipo_servico = models.CharField(max_length=1, blank=True, null=True)
     ser_preco_total = models.DecimalField(max_digits=5, decimal_places=2)
 
-    def __str__(self):
-        return self.ser_id
+    
